@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Test / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build Artifacts
+dist/
+build/
+*.egg-info/
+
+# Terraform (if introduced later)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Trivy
+.trivycache/
+
+# Secrets
+.env
+*.env
+secret.txt
+
+# Misc
+*.log
