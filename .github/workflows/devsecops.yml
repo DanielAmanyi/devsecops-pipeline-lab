@@ -49,6 +49,12 @@ jobs:
             - uses: actions/checkout@v4
             - name: Build Image
               run: docker build -t devsecops-lab .
+            - name: Upload image artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: devsecops-lab
+                  path: image.tar
+
             - name: Scan Image
               uses: aquasecurity/trivy-action@v0.36.0
               with:
